@@ -16,6 +16,10 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     padding-bottom: 120px;
+    margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Impede rolagem horizontal */
+  width: 100vw; /* Garante que o body não ultrapasse a largura da tela */
   }
 
   .container {
@@ -26,7 +30,7 @@ export const GlobalStyle = createGlobalStyle`
 
   @media (max-width: 1024px) {
     .container {
-      max-width: 80%;
+      max-width: 100%;
     }
   }
 `
